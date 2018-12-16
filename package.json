@@ -4,7 +4,9 @@
   "description": "Count down + Scheduler for our Hackathons",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+		"lint": "./node_modules/eslint/bin/eslint.js **/*.js",
+    "test": "mocha",
+		"watch": "mocha --watch"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,4 @@
 /* eslint no-magic-numbers: 0 */
-/*eslint no-undef: 1*/
 
 'use strict'
 
