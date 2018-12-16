@@ -17,7 +17,7 @@ describe('GET /', () => {
 		const response = await request(server).get('/')
 		expect(response.status).to.equal(200)
 		expect(response.type).to.equal('application/json')
-		expect(response.body.message).to.equal('Check the docs for info on how to use this API')
+		expect(response.body.message).to.equal('Countdown API - Check the docs for info on how to use')
 	})
 
 	after(() => server.close())
