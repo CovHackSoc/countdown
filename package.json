@@ -1,35 +1,37 @@
 {
-  "name": "countdown",
-  "version": "1.0.0",
-  "description": "Count down + Scheduler for our Hackathons",
-  "main": "index.js",
-  "scripts": {
-    "lint": "./node_modules/eslint/bin/eslint.js **/*.js",
-    "test": "mocha --timeout 60000",
-    "watch": "mocha --timeout 60000 --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CovHackSoc/countdown.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/CovHackSoc/countdown/issues"
-  },
-  "homepage": "https://github.com/CovHackSoc/countdown#readme",
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "eslint": "^5.10.0",
-    "mocha": "^5.2.0",
-    "mongodb-memory-server": "^2.8.0",
-    "supertest": "^3.3.0"
-  },
-  "dependencies": {
-    "koa": "^2.6.2",
-    "koa-bodyparser": "^4.2.1",
-    "koa-router": "^7.4.0",
-    "mongodb": "^3.1.10",
-    "mongoose": "^5.4.0"
-  }
+    "name": "countdown",
+    "version": "1.0.0",
+    "description": "Count down + Scheduler for our Hackathons",
+    "main": "src/index.js",
+    "scripts": {
+        "lint": "./node_modules/eslint/bin/eslint.js src/**/*.js",
+        "test": "mocha --timeout 60000 src/test/",
+        "watch": "mocha --watch --timeout 60000 src/test/",
+        "start": "node src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CovHackSoc/countdown.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/CovHackSoc/countdown/issues"
+    },
+    "homepage": "https://github.com/CovHackSoc/countdown#readme",
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "eslint": "^5.10.0",
+        "mocha": "^5.2.0",
+        "mongodb-memory-server": "^2.8.0",
+        "supertest": "^3.3.0"
+    },
+    "dependencies": {
+        "config": "^3.0.0",
+        "koa": "^2.6.2",
+        "koa-bodyparser": "^4.2.1",
+        "koa-router": "^7.4.0",
+        "mongodb": "^3.1.10",
+        "mongoose": "^5.4.0"
+    }
 }
