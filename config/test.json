@@ -1,9 +1,9 @@
 {
-    "net": {
-        "host": "localhost",
-        "port": 0
-    },
-    "database": {
-        "uri": "mongodb://127.0.0.1:27017/dev"
-    }
+  "net": {
+    "host": "localhost",
+    "port": 0
+  },
+  "database": {
+    "uri": "mongodb://127.0.0.1:27017/dev"
+  }
 }
