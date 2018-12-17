@@ -4,9 +4,9 @@
   "description": "Count down + Scheduler for our Hackathons",
   "main": "index.js",
   "scripts": {
-		"lint": "./node_modules/eslint/bin/eslint.js **/*.js",
-    "test": "mocha",
-		"watch": "mocha --watch"
+    "lint": "./node_modules/eslint/bin/eslint.js **/*.js",
+    "test": "mocha --timeout 60000",
+    "watch": "mocha --timeout 60000 --watch"
   },
   "repository": {
     "type": "git",
@@ -22,12 +22,14 @@
     "chai": "^4.2.0",
     "eslint": "^5.10.0",
     "mocha": "^5.2.0",
+    "mongodb-memory-server": "^2.8.0",
     "supertest": "^3.3.0"
   },
   "dependencies": {
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
-    "mongodb": "^3.1.10"
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.4.0"
   }
 }
