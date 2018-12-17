@@ -1,12 +1,10 @@
 'use strict';
 
-const Router = require('koa-router');
-
-/* Routes */
-const info = require('./info');
-
-module.exports = () => {
-  const router = new Router();
-  router.all('/', info.index);
-  return router;
+module.exports.index = async(ctx) => {
+  ctx.status = 200;
+  ctx.body = {
+    status: 'success',
+    data: null,
+    message: 'Countdown API - Check the docs for info on how to use'
+  };
 };
